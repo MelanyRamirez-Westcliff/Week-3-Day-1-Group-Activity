@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Recipe Challenge</title>
+</head>
+
+<body>
+
+<div style="border:1px solid black; width:500px; padding:15px;">
+
+    <h1 id="title"></h1>
+
+    <p id="recipe"></p>
+
+</div>
+
+<script>
+
+    // Variable
+    var hour = new Date().getHours();
+
+    // Lunch function
+    function lunchRecipe()
+    {
+        document.getElementById("title").innerHTML = "Lunch Recipe";
+
+        document.getElementById("recipe").innerHTML =
+        "1. Prepare burger patty.<br>" +
+        "2. Grill patty on medium heat.<br>" +
+        "3. Toast bun while grilling meat.<br>" +
+        "4. Prepare toppings.<br>" +
+        "5. Assemble ingredients into hamburger.";
+    }
+
+    // Dinner function
+    function dinnerRecipe()
+    {
+        document.getElementById("title").innerHTML = "Dinner Recipe";
+
+        document.getElementById("recipe").innerHTML =
+        "1. Boil water.<br>" +
+        "2. Boil the pasta.<br>" +
+        "3. Drain the pasta.<br>" +
+        "4. Add pasta sauce.<br>" +
+        "5. Serve the pasta.";
+    }
+
+    // Decision making
+    if (hour < 12)
+    {
+        lunchRecipe();
+    }
+    else
+    {
+        dinnerRecipe();
+    }
+
+</script>
+
+</body>
+</html>
